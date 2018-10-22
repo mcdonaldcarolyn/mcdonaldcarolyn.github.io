@@ -1,0 +1,20 @@
+# Site settings
+author: Carolyn Whelpley
+title: The Second Act
+header-img: img/home-bg.png
+email: carolynmwhelp@gmail.com
+copyright_name: Carolyn Whelpley
+description: > # this means to ignore newlines until "baseurl:"
+  still figuring out what I want to be when I grow up
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  mcdonaldcarolyn
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
