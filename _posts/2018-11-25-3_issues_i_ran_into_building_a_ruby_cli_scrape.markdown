@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "3 Issues I Ran Into Building a Ruby CLI Scrape"
-date:       2018-11-25 21:48:22 +0000
+date:       2018-11-25 16:48:22 -0500
 permalink:  3_issues_i_ran_into_building_a_ruby_cli_scrape
 ---
 
