@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Routes for beginners"
+title:      "Routes for Beginners"
 date:       2019-02-04 13:14:09 -0500
 permalink:  routes_for_beginners
 ---
