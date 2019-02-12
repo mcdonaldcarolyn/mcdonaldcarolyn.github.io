@@ -16,5 +16,5 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-theme: Jalpc
+theme: minima
 gems: [jekyll-paginate, jekyll-feed]
