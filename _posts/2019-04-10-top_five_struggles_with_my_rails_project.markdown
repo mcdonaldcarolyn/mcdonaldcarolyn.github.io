@@ -1,0 +1,38 @@
+---
+layout: post
+title:      "Top Five Struggles with my Rails Project "
+date:       2019-04-11 02:07:22 +0000
+permalink:  top_five_struggles_with_my_rails_project
+---
+
+
+#### A brief look at what Rails is...
+
+Rails is a web framework that uses the Ruby language to create web applications. It uses convention to create a lot of what is needed for simple and complex web apps and combined with a few gems can get a programmer’s project up and running quickly. 
+	Ruby on Rails has many uses and many amazing web applications were built with Rails. It’s a strong framework with a huge library of gems available. Rails is lightning fast (compared to similar frameworks) to get a basic web app up and running and uses the very popular and user-friendly Ruby language. It utilizes common patterns like MVC and REST and it relies very heavily on conventions. It has a developer workflow that makes it easy to work with the database. 
+	There is a lot of magic underneath the scenes. Rails does a lot of the thinking and structure planning for you when it comes to your app design. It enforces MVC structure and much of the magic is based on what Rails thinks is the DRYest and most efficient way to build. It can scaffold a lot of your main files easily in the beginning and connect them all simply.  The associations between models can create relationships that can make it easier to code them together. 
+	
+#### Here are the top five things I struggled with when building my Rails project and how I figured them out
+
+	1. Rails Macros- This is part of the rails magic I am still getting comfortable with. Macros are class methods that create new instance methods. Rails tried to make it easy to access the data in the database through the model and creates and methods based on the fields of the database.  has_many is an example of a macro usage.
+
+	2. Join tables -  I used a join table so I could access 2 major databases both together and separately. The overall idea is crystal clear to me but saving one item through the join table was very challenging in the nitty gritty detail and I build the methods for this wrong several times. 
+
+	3. Using device and Omniauth together. - I found these to be like oil and vinegar- better together but hard to mix. I had install device in first to handle a lot of the user interface and build the omni auth last and I ran into a lot of trouble adding the user information from the 3rd party onmiauth into the device. I also felt like there were several layers deep I could add the 3rd party info and wan’t sure how deep to create the user info for this simple app. 
+
+	4. Delete routes - I think every delete function I built took several tried to get it to work. This was another area where the join table make it a bit trickier to create the just right path to delete the item. When deleting an item from nested routes or through a join table, make sure to pass in both the parent and the child  objects. 
+
+	5. Using scope methods with several databases-  I wanted to create a simple scope to pull out certain items from the database that did not include items from the second table- this proved very difficult.- again those tricky join tables. 
+
+```
+def self.vegetarian
+    where("id not in (select meal_id from meals_ingredients mi inner join ingredients i on mi.ingredient_id = i.id where i.name in ('chicken', 'steak', 'beef', 'ground beef'))")
+  end
+```
+
+phew that was a doozy. 
+
+I was very challenged and frustrated by this project, but am hoping as I continue to use Rails i can appreciate all that it can offer. 
+
+
+
