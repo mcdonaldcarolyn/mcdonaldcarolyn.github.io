@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Top Five Struggles with my Rails Project "
-date:       2019-04-11 02:07:22 +0000
+date:       2019-04-10 22:07:23 -0400
 permalink:  top_five_struggles_with_my_rails_project
 ---
 
@@ -18,7 +18,7 @@ Rails is a web framework that uses the Ruby language to create web applications.
 
 	2. Join tables -  I used a join table so I could access 2 major databases both together and separately. The overall idea is crystal clear to me but saving one item through the join table was very challenging in the nitty gritty detail and I build the methods for this wrong several times. 
 
-	3. Using device and Omniauth together. - I found these to be like oil and vinegar- better together but hard to mix. I had install device in first to handle a lot of the user interface and build the omni auth last and I ran into a lot of trouble adding the user information from the 3rd party onmiauth into the device. I also felt like there were several layers deep I could add the 3rd party info and wan’t sure how deep to create the user info for this simple app. 
+	3. Using devise and Omniauth together. - I found these to be like oil and vinegar- better together but hard to mix. I had install devise in first to handle a lot of the user interface and build the omni auth last and I ran into a lot of trouble adding the user information from the 3rd party onmiauth into the devise. I also felt like there were several layers deep I could add the 3rd party info and wasn’t sure how deep to create the user info for this simple app. 
 
 	4. Delete routes - I think every delete function I built took several tried to get it to work. This was another area where the join table make it a bit trickier to create the just right path to delete the item. When deleting an item from nested routes or through a join table, make sure to pass in both the parent and the child  objects. 
 
