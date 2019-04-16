@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Top Five Struggles with my Rails Project "
+title:      "My First Rails Project"
 date:       2019-04-10 22:07:23 -0400
 permalink:  top_five_struggles_with_my_rails_project
 ---
